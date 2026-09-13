@@ -1,0 +1,62 @@
+/* Phone navigation bar */
+.navbar {
+    position: sticky;
+    padding: 15px 20px;
+}
+
+/* Show the hamburger only on phones */
+.menu-button {
+    display: block;
+    padding: 5px;
+
+    color: white;
+    background-color: transparent;
+    border: none;
+
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* Hide the links before the hamburger is clicked */
+.nav-links {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    width: 180px;
+    padding: 15px;
+
+    background-color: black;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+}
+
+/* JavaScript adds the show class */
+.nav-links.show {
+    display: flex;
+}
+
+.nav-links a,
+.nav-links a:visited {
+    margin: 0;
+    padding: 12px;
+}
+
+/* Phone page content */
+#home {
+    padding: 30px 15px;
+}
+
+.content {
+    padding: 15px;
+}
+
+section {
+    min-height: auto;
+    padding-top: 30px;
+}
