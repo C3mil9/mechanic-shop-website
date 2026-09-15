@@ -1,4 +1,4 @@
-# Mechanic Shop Website
+# SPEEDWAGON MOTORS Website
 
 A responsive website for a mechanic shop where customers can view available services and submit appointment or repair requests. Submitted information will be securely sent to the shop owner by email.
 
