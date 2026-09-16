@@ -49,14 +49,82 @@
 
 /* Phone page content */
 #home {
-    padding: 30px 15px;
+    padding: 0;
 }
 
 .content {
-    padding: 15px;
+    padding: 0;
 }
 
 section {
     min-height: auto;
     padding-top: 30px;
+}
+
+/* Home hero section */
+.hero {
+    min-height: calc(100vh - 65px);
+    padding: 50px 25px;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero-description {
+    font-size: 16px;
+}
+
+.hero-buttons {
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-buttons a {
+    width: auto;
+    text-align: center;
+}
+
+/* About section */
+.heading {
+    min-height: auto;
+    padding: 70px 25px;
+}
+
+.heading h1 {
+    font-size: 42px;
+}
+
+.heading-aboutUs {
+    font-size: 16px;
+}
+
+/* Services section */
+.heading2 {
+    min-height: auto;
+    padding: 70px 25px;
+}
+
+.heading2 h1 {
+    font-size: 42px;
+}
+
+.services-grid {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+}
+
+.service-card {
+    min-height: auto;
+    padding: 35px 25px;
+}
+
+/* Contact section */
+#contact {
+    padding: 50px 25px;
+}
+
+textarea {
+    width: 100%;
 }

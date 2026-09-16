@@ -1,0 +1,58 @@
+/* About Us section */
+#about {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.heading {
+    width: 100%;
+    min-height: calc(100vh - 65px);
+    box-sizing: border-box;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.72)
+        ),
+        url("../images/black.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 60px 12%;
+}
+
+.heading-content {
+    max-width: 600px;
+    color: white;
+}
+
+.heading-label {
+    color: #ff6600;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    color: white;
+    font-size: 65px;
+    line-height: 0.95;
+    margin: 0 0 25px;
+}
+
+.heading h1 span {
+    color: #ff6600;
+}
+
+.heading-aboutUs {
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}

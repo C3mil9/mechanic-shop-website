@@ -1,13 +1,30 @@
+/* Connect the other CSS files */
+@import url("about.css");
+@import url("services.css");
+@import url("contact.css");
+@import url("mobile.css") screen and (max-width: 600px);
+
+/* Global styles */
 html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    font-family: "Times New Roman", Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Computer navigation bar */
+.content {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    min-height: 300px;
+    padding-top: 30px;
+}
+
+/* Navigation bar */
 .navbar {
     width: 100%;
     box-sizing: border-box;
@@ -24,7 +41,12 @@ body {
     z-index: 1000;
 }
 
-/* Shop name */
+.logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
 .shop-name {
     color: white;
     font-size: 20px;
@@ -32,7 +54,6 @@ body {
     text-decoration: none;
 }
 
-/* Navigation links */
 .nav-links {
     display: flex;
     align-items: center;
@@ -48,7 +69,6 @@ body {
     margin-left: 15px;
 }
 
-/* Link changes when the mouse is over it */
 .nav-links a:hover {
     color: black;
     background-color: white;
@@ -60,49 +80,11 @@ body {
     display: none;
 }
 
-/* Page sections */
+/* Home section */
 #home {
     padding: 40px 20px;
 }
 
-.content {
-    padding: 20px;
-}
-
-section {
-    min-height: 300px;
-    padding-top: 30px;
-}
-
-textarea{
-    width: 80%;
-    padding: 10px;
-    box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
-    resize: vertical;
-    vertical-align: top;
-}
-
-fieldset{
-    border: none;
-    padding: 0;
-    margin: 30px 0;
-}
-
-legend {
-    font-size: 20px;
-    font-weight:bold;
-    margin-bottom: 15px;
-}
-
-/*Styling for the hero (Main Starting Page)*/
-/*Removing spacing from margin*/
-.content{
-    padding:0;
-    margin:0;
-}
-
-/* Full-screen title page */
 .hero {
     min-height: calc(100vh - 65px);
     box-sizing: border-box;
@@ -123,17 +105,16 @@ legend {
     padding: 60px 12%;
 }
 
-.hero-content{
+.hero-content {
     max-width: 600px;
     color: white;
 }
 
-.hero-label{
-    color:#ff0000;
-    font-family: Arial, Helvetica, sans-serif;
+.hero-label {
+    color: #ff0000;
     font-size: 14px;
-    font-weight:bold;
-    letter-spacing:4px;
+    font-weight: bold;
+    letter-spacing: 4px;
     margin-bottom: 20px;
 }
 
@@ -150,7 +131,6 @@ legend {
 
 .hero-description {
     color: #cccccc;
-    font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 30px;
@@ -163,7 +143,6 @@ legend {
 
 .hero-buttons a {
     padding: 18px 30px;
-    font-family: Arial, sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
@@ -185,167 +164,4 @@ legend {
 
 .mission-button:hover {
     background-color: rgba(255, 255, 255, 0.15);
-}
-
-/* Give the other sections spacing */
-
-#contact {
-    padding: 70px 40px;
-}
-
-/* About Us Section */
-.heading {
-    width: 100%;
-    min-height: calc(100vh - 65px);
-    box-sizing: border-box;
-
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.72),
-            rgba(0, 0, 0, 0.72)
-        ),
-        url("../images/black.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-    padding: 60px 12%;
-}
-
-.heading-content{
-    max-width: 600px;
-    color: white;
-}
-
-.heading-label{
-    color:#ff6600;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight:bold;
-    letter-spacing:4px;
-    margin-bottom: 20px
-}
-
-.heading h1{
-    color:white;
-    font-size: 65px;
-    line-height:0.95;
-    margin: 0 0 25px;
-
-}
-
-.heading h1 span{
-    color:#ff6600
-}
-
-.heading-aboutUs{
-    color: #cccccc;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
-
-#about{
-     padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-/*Services Page (header2)*/
-.heading2 {
-    width: 100%;
-    min-height: calc(100vh - 65px);
-    box-sizing: border-box;
-
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.72),
-            rgba(0, 0, 0, 0.72)
-        ),
-        url("../images/black.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-    padding: 60px 12%;
-}
-
-.heading2-services{
-    max-width: 600px;
-    color: white;
-}
-
-.heading2-label{
-    color:#ff6600;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight:bold;
-    letter-spacing:4px;
-    margin-bottom: 20px
-}
-
-.heading2 h1{
-    color:white;
-    font-size: 65px;
-    line-height:0.95;
-    margin: 0 0 25px;
-
-}
-
-.heading2 h1 span{
-    color:#ff6600
-}
-
-#services{
-    padding: 0;
-    margin: 0;
-    width:100%;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 60px;
-    border-top: 1px solid #333333;
-    border-left: 1px solid #333333;
-}
-
-.service-card {
-    min-height: 280px;
-    padding: 50px 40px;
-    box-sizing: border-box;
-    background-color: #171717;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-}
-
-.service-icon {
-    display: block;
-    font-size: 38px;
-    margin-bottom: 35px;
-}
-
-.service-card h2 {
-    color: white;
-    font-size: 26px;
-    margin: 0 0 20px;
-}
-
-.service-card p {
-    color: #85858f;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.service-card:hover {
-    background-color: #202020;
 }
