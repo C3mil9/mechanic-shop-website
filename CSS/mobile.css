@@ -121,10 +121,17 @@ section {
 }
 
 /* Contact section */
-#contact {
-    padding: 50px 25px;
+.heading3{
+    min-height:auto;
+    text-align:center;
+
 }
 
-textarea {
-    width: 100%;
+.heading3 h1{
+    font-size: 42px;
 }
+
+
+
+
+

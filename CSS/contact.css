@@ -1,6 +1,56 @@
 /* Contact section */
 #contact {
-    padding: 70px 40px;
+    padding: 0;
+    margin: 0;
+    width:100%;
+
+}
+
+.heading3 {
+    width: 100%;
+    min-height: calc(100vh - 65px);
+    box-sizing: border-box;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.72)
+        ),
+        url("../images/black.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 60px 12%;
+}
+
+.heading3-content {
+    max-width: 600px;
+    color: white;
+}
+
+.heading3-label{
+    color:whitesmoke;
+    font-weight:bold;
+}
+
+.heading3 h1 {
+    color: white;
+    font-size: 65px;
+    line-height: 0.95;
+    margin: 0 0 25px;
+}
+
+.heading3 h1 span {
+    color: #ff0000;
+}
+
+.heading3-info{
+    color:yellow;
+    
 }
 
 textarea {
@@ -22,4 +72,22 @@ legend {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
+}
+
+.appointment-button {
+    display: inline-block;
+    padding: 14px 24px;
+
+    color: white;
+    background-color: #ff0000;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.appointment-button:hover {
+    background-color: #d95400;
 }

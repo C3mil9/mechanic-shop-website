@@ -1,280 +1,56 @@
-<h4>GET IN TOUCH</h4>
+<div class ="heading3">
 
-<h2>SUBMIT A WORK REQUEST</h2>
+<div class="heading3-content">
+
+
+<p class="heading3-label">
+    GET IN TOUCH</p>
+
+<!-- Shop contact information -->
+
+<h1><span>REQUEST AN APPOINTMENT</span></h1>
 
 <p>
-    Fill out this form and we'll get back to you within one
-    business day. The more detail you give us, the faster we
-    can help. Thank you!
+    Use our online appointment system to tell us about your vehicle
+    and the service you need. We’ll review your request and contact
+    you to confirm your appointment.
 </p>
 
 <!-- Shop contact information -->
 <div class="contact-information">
 
-    <p>
-        <strong>Phone:</strong>
-        <p></p>
-    </p>
+    <div>
+        <strong class="heading3-info">Phone:</strong>
+        <p>(323) 618-8500</p>
+    </div>
 
-    <p>
-        <strong>Hours:</strong>
-    </p>
+    <div>
+        <strong class="heading3-info">Hours:</strong>
+        <p>MON-SAT</p>
+    </div>
 
-    <p>
-        <strong>Location:</strong>
-        <p>9851 Eighth St Unit Q <br>
-            Rancho Cucamonga, CA  91730<br>
-            United States</p>
-    </p>
+    <div>
+        <strong class="heading3-info">Location:</strong>
+        <p>
+            9851 Eighth St, Unit Q<br>
+            Rancho Cucamonga, CA 91730<br>
+            United States
+        </p>
+    </div>
 
 </div>
 
-<!-- Work request form -->
-<form>
+<!-- URL with the shop's Tekmetric booking link -->
 
-    <!-- Customer information -->
-    <fieldset>
+<a
+    class="appointment-button"
+    href="YOUR-TEKMETRIC-BOOKING-LINK"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    Request an Appointment
+</a>
+    </form>
 
-        <legend>Your Information</legend>
-
-        <div class="form-group">
-
-            <label for="first-name">
-                First Name*
-            </label>
-
-            <input
-                type="text"
-                id="first-name"
-                name="firstName"
-                placeholder="First Name"
-                required
-            >
-
-        </div>
-
-        <div class="form-group">
-
-            <label for="last-name">
-                Last Name*
-            </label>
-
-            <input
-                type="text"
-                id="last-name"
-                name="lastName"
-                placeholder="Last Name"
-                required
-            >
-
-        </div>
-
-        <div class="form-group">
-
-            <label for="email">
-                Email*
-            </label>
-
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter Email Address"
-                required
-            >
-
-        </div>
-
-        <div class="form-group">
-
-            <label for="phone">
-                Telephone*
-            </label>
-
-            <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="000-000-0000"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                title="Enter the phone number as 000-000-0000"
-                required
-            >
-
-        </div>
-
-    </fieldset>
-
-    <!-- Vehicle information -->
-    <fieldset>
-
-        <legend>Vehicle Details</legend>
-
-        <div class="form-group">
-
-            <label for="make-model">
-                Make &amp; Model*
-            </label>
-
-            <input
-                type="text"
-                id="make-model"
-                name="makeModel"
-                placeholder="Toyota Camry"
-                required
-            >
-
-        </div>
-
-        <div class="form-group">
-
-            <label for="year">
-                Year*
-            </label>
-
-            <input
-                type="number"
-                id="year"
-                name="year"
-                placeholder="2020"
-                min="1900"
-                max="2100"
-                required
-            >
-
-        </div>
-
-        <div class="form-group">
-
-            <label for="mileage">
-                Mileage*
-            </label>
-
-            <input
-                type="number"
-                id="mileage"
-                name="mileage"
-                placeholder="80000"
-                min="0"
-                required
-            >
-
-        </div>
-
-    </fieldset>
-
-    <!-- Service information -->
-    <fieldset>
-
-        <legend>Service Request</legend>
-
-        <div class="form-group">
-
-            <label for="service-type">
-                Select a Service
-            </label>
-
-            <select
-                id="service-type"
-                name="serviceType"
-            >
-                <option value="">
-                    Choose a service
-                </option>
-
-                <option value="brakes">
-                    Brakes
-                </option>
-
-                <option value="oil-change">
-                    Oil Change
-                </option>
-
-                <option value="tune-up">
-                    Tune Up
-                </option>
-
-                <option value="tires">
-                    Tire Change
-                </option>
-
-                <option value="other">
-                    Other
-                </option>
-            </select>
-
-        </div>
-
-        <div class="form-group">
-
-            <label for="preferred-date">
-                Preferred Date
-            </label>
-
-            <input
-                type="date"
-                id="preferred-date"
-                name="preferredDate"
-            >
-
-        </div>
-
-        <!-- Urgency options -->
-        <div class="form-group">
-
-            <h3>Urgency</h3>
-
-            <label>
-                <input
-                    type="radio"
-                    name="urgency"
-                    value="No Rush"
-                    required
-                >
-                No Rush
-            </label>
-
-            <label>
-                <input
-                    type="radio"
-                    name="urgency"
-                    value="Within a Week"
-                >
-                Within a Week
-            </label>
-
-            <label>
-                <input
-                    type="radio"
-                    name="urgency"
-                    value="ASAP"
-                >
-                ASAP
-            </label>
-
-        </div>
-
-        <!-- Text box for the issue -->
-        <div class="form-group">
-
-            <label for="issue">
-                <strong>Describe the Issue*</strong>
-            </label>
-
-            <textarea
-                id="issue"
-                name="issue"
-                rows="7"
-                placeholder="Describe any sounds, warning lights, or other problems with your vehicle."
-                required
-            ></textarea>
-
-        </div>
-
-    </fieldset>
-
-    <button type="submit">
-        Submit Work Request
-    </button>
-
-</form>
+    </div>
+    </div>
