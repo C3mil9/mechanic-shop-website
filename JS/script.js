@@ -59,6 +59,11 @@ const websiteSections = [
     {
         id: "contact",
         file: "HTML Sections/contact.html"
+    },
+
+    {
+        id:"footer",
+        file: "HTML Sections/footer.html"
     }
 ];
 
@@ -94,11 +99,9 @@ async function loadWebsite() {
             websiteSections.map(loadSection)
         );
 
-        /*
-            If the page URL already contains something
-            like #contact, scroll to that section after
-            all the HTML files finish loading.
-        */
+        //connection to map button
+        setupMapMenu();
+        
         if (window.location.hash) {
 
             const selectedSection =
@@ -122,3 +125,25 @@ async function loadWebsite() {
 }
 
 loadWebsite();
+
+
+//Popup for location options 
+//button implementation
+
+//fetching the buttons address ID
+function setupMapMenu(){
+    const addressButton=
+    document.getElementById("address-button");
+
+    const mapMenu=document.getElementById("map-menu");
+
+    if(!addressButton || !mapMenu){
+        return;
+    }
+
+    addressButton.addEventListener("click", function(){
+        mapMenu.classList.toggle("show");
+    });
+}
+
+

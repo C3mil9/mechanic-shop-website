@@ -58,6 +58,49 @@
     
 }
 
+.address-button{
+    background:none;
+    border:none;
+    padding:0;
+
+    color: white;
+    font: inherit;
+    text-align:center;
+
+    cursor: pointer;
+}
+
+.address-button{
+    text-decoration: underline;
+}
+
+.map-menu{
+    display: none;
+    margin-top: 15px;
+}
+
+.map-menu.show{
+    display: block;
+}
+
+.map-menu a{
+    display:black;
+    width: fit-content;
+
+    margin: 8px 4px;
+    padding: 5px 5px;
+
+    background-color: #ff0000;
+    color:white;
+
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.map-menu a:hover{
+    background-color: azure;
+}
+
 textarea {
     width: 80%;
     padding: 10px;
