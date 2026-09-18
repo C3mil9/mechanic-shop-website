@@ -11,14 +11,14 @@
     color: rgba(52, 48, 48, 0.058);
 }
 
-.footer p {
+.footer p{
     margin: 0 0 15px;
     color: grey;
-    text-align:center;
+    text-align:left;
 }
 
 .footer-links{
-    text-align:center;
+    text-align:left;
     gap: 15px;
 }
 
@@ -28,3 +28,11 @@
     text-decoration: none;
 }
 
+
+
+.footer-logo{
+    width: 6%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
