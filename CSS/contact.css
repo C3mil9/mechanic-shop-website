@@ -126,6 +126,7 @@ legend {
     margin-bottom: 15px;
 }
 
+/*Tekmetric Button*/
 .appointment-button {
     display: inline-block;
     padding: 14px 24px;
@@ -133,11 +134,15 @@ legend {
     color: white;
     background-color: #ff0000;
 
+    font-family: inherit;
+    font-size: inherit;
     font-weight: bold;
-    text-decoration: none;
 
+    border: none;
     border-radius: 5px;
+
     cursor: pointer;
+    text-decoration: none;
 }
 
 .appointment-button:hover {

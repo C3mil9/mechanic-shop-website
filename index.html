@@ -93,6 +93,25 @@
 
     </main>
 
+    <!--TekMetric booking script-->
+       
+       
+       <script>
+    window.onload = function() {
+    const script = document.createElement('script');
+    script.src =
+      'https://booking.tekmetric.com/iframe/modal.js?time=' + new Date().getTime();
+    script.defer = true;
+    document.body.appendChild(script);
+
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href =
+      'https://booking.tekmetric.com/iframe/modal.css?time=' + new Date().getTime();
+    document.head.appendChild(link);
+     };
+    </script>
+
 </body>
 
 </html>
