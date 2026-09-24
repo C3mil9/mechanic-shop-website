@@ -168,3 +168,51 @@ section {
 .mission-button:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
+
+/* Services scroll animation */
+.service-card {
+    opacity: 0;
+    transform: translateY(-80px) scale(0.98);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Stagger each card */
+.service-card:nth-child(2) {
+    transition-delay: 0.12s;
+}
+
+.service-card:nth-child(3) {
+    transition-delay: 0.24s;
+}
+
+.service-card.show-service {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Smoother mobile animation */
+@media screen and (max-width: 600px) {
+    .service-card {
+        transform: translateY(-40px) scale(0.98);
+        transition-duration: 0.65s;
+    }
+
+    .service-card:nth-child(2) {
+        transition-delay: 0.08s;
+    }
+
+    .service-card:nth-child(3) {
+        transition-delay: 0.16s;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .service-card {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

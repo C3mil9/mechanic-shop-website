@@ -146,4 +146,45 @@ function setupMapMenu(){
     });
 }
 
+// Service cards animate when entering and reset when leaving
+const serviceObserver = new IntersectionObserver(
+    function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show-service");
+            } else {
+                // Reset animation after scrolling away
+                entry.target.classList.remove("show-service");
+            }
+        });
+    },
+    {
+        threshold: 0.15
+    }
+);
 
+function watchServiceCards() {
+    const serviceCards = document.querySelectorAll(
+        "#services .service-card:not([data-service-watched])"
+    );
+
+    serviceCards.forEach(function (card) {
+        card.dataset.serviceWatched = "true";
+        serviceObserver.observe(card);
+    });
+}
+
+watchServiceCards();
+
+const servicesSection = document.getElementById("services");
+
+if (servicesSection) {
+    const servicesContentObserver = new MutationObserver(
+        watchServiceCards
+    );
+
+    servicesContentObserver.observe(servicesSection, {
+        childList: true,
+        subtree: true
+    });
+}
